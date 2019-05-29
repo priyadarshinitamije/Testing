@@ -12,7 +12,7 @@ namespace Automation1.Pages
     {
 
         //Function to create TM
-        public void addTM(IWebDriver driver)
+        public void AddTM(IWebDriver driver)
         {
 
             //Create a new material
@@ -70,7 +70,7 @@ namespace Automation1.Pages
 
 
 
-        public void editTM(IWebDriver driver)
+        public void EditTM(IWebDriver driver)
         {
 
             //go to last page
@@ -91,7 +91,7 @@ namespace Automation1.Pages
 
 
 
-        public void deleteTM(IWebDriver driver)
+        public void DeleteTM(IWebDriver driver)
         { 
 
             //Enter the Code
@@ -107,5 +107,5 @@ namespace Automation1.Pages
         }
     }
 }
-}
+
 

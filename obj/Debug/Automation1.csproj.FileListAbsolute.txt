@@ -5,9 +5,11 @@ D:\Automation\Automation1\Automation1\bin\Debug\WebDriver.dll
 D:\Automation\Automation1\Automation1\bin\Debug\WebDriver.Support.dll
 D:\Automation\Automation1\Automation1\bin\Debug\WebDriver.xml
 D:\Automation\Automation1\Automation1\bin\Debug\WebDriver.Support.xml
-D:\Automation\Automation1\Automation1\obj\Debug\Automation1.csprojAssemblyReference.cache
 D:\Automation\Automation1\Automation1\obj\Debug\Automation1.csproj.CoreCompileInputs.cache
 D:\Automation\Automation1\Automation1\obj\Debug\Automation1.csproj.CopyComplete
 D:\Automation\Automation1\Automation1\obj\Debug\Automation1.exe
 D:\Automation\Automation1\Automation1\obj\Debug\Automation1.pdb
 D:\Automation\Automation1\Automation1\bin\Debug\chromedriver.exe
+D:\Automation\Automation1\Automation1\bin\Debug\nunit.framework.dll
+D:\Automation\Automation1\Automation1\bin\Debug\nunit.framework.pdb
+D:\Automation\Automation1\Automation1\bin\Debug\nunit.framework.xml

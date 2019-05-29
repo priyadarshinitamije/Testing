@@ -11,7 +11,7 @@ namespace Automation1.Pages
     {
 
         //Steps to login to TurnUp portal
-        public void loginSteps(IWebDriver driver)
+        public void LoginSteps(IWebDriver driver)
         {
 
 

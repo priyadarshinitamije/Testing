@@ -9,7 +9,7 @@ namespace Automation1.Pages
     class HomePage
     {
         //Function to navigate to TM page
-        public void navigateToTM(IWebDriver driver)
+        public void NavigateToTM(IWebDriver driver)
         {
 
 

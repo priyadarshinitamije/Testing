@@ -10,6 +10,6 @@ namespace Automation1.Helpers
     class CommonDriver
     {
         //Init common driver
-        public static IWebDriver driver { set; get; }
+        public static IWebDriver Driver { set; get; }
     }
 }

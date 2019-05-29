@@ -1,5 +1,6 @@
 ﻿using Automation1.Helpers;
 using Automation1.Pages;
+using NUnit.Framework;
 using OpenQA.Selenium;
 using OpenQA.Selenium.Chrome;
 using System;
@@ -11,42 +12,70 @@ using System.Threading.Tasks;
 
 namespace Automation1
 {
+    [TestFixture]
     class Program
 
     {
 
-
-        static void Main(string[] args)
+        [SetUp]
+        static void Login()
         {
-            CommonDriver.driver = new ChromeDriver();
+            CommonDriver.Driver = new ChromeDriver();
 
             //Step to login
             LoginPage loginObj = new LoginPage();
-            loginObj.loginSteps(CommonDriver.driver);
+            loginObj.LoginSteps(CommonDriver.Driver);
 
             //steps to navigate to TM
             HomePage homeObj = new HomePage();
-            homeObj.navigateToTM(CommonDriver.driver);
+            homeObj.NavigateToTM(CommonDriver.Driver);
 
+        }
+
+        [Test]
+        static void AddTMTest()
+        {
             //steps for create new TM
             TMPage tmObj = new TMPage();
-            tmObj.addTM(CommonDriver.driver);
+            tmObj.AddTM(CommonDriver.Driver);
+
+        }
+
+
+        [Test]
+        static void EditTMTest()
+        {
 
             //steps to edit TM
             TMPage editObj = new TMPage();
-            editObj.editTM(CommonDriver.driver);
+            editObj.EditTM(CommonDriver.Driver);
 
-            //steps to delete TM
-            TMPage deleteObj = new TMPage();
-            deleteObj.deleteTM(CommonDriver.driver);
+        }
 
 
+        [Test]
+        static void DeleteTMTest()
+        {
+          //steps to delete TM
+         TMPage deleteObj = new TMPage();
+         deleteObj.DeleteTM(CommonDriver.Driver);
 
+        }
 
+        [TearDown]
+        public void FlushTest()
+        {
+            //Close driver
+            CommonDriver.Driver.Close();
+        }
 
-
+        static void Main(string[] args)
+        {
 
 
         }
+
     }
 }
+
+
