@@ -102,8 +102,7 @@ namespace Automation1.Pages
 
 
             //click ok button
-            driver.SwitchTo().Alert().Accept();
-
+            CommonDriver.Driver.SwitchTo().Alert().Accept();
         }
     }
 }
